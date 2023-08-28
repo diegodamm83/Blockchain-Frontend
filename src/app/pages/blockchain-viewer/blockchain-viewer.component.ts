@@ -18,7 +18,7 @@ export class BlockchainViewerComponent {
     this.selectedBlock = this.blocks[0];
   }
 
-  showTransactions(block: any){
+  showTransactions(block){
     this.selectedBlock = block;
   }
 

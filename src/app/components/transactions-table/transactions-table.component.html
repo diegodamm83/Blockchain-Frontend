@@ -16,13 +16,14 @@
       <td>{{index}}</td>
       <td class="text-truncate" style="max-width: 100px;">
 
-        <a [routerLink]="['/wallet', tx.fromAddress]" *ngIf="tx.fromAddress !== null">{{tx.fromAddress}}</a>
+        {{tx.fromAddress}}
 
         <span *ngIf="tx.fromAddress === null">System</span>
-
       </td>
       <td class="text-truncate" style="max-width: 100px;">
-          <a [routerLink]="['/wallet', tx.toAddress]">{{tx.toAddress}}</a>
+
+        {{tx.toAddress}}
+          
       </td>
       <td>
         {{tx.amount}}
