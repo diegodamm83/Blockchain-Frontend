@@ -7,9 +7,8 @@ import { BlockchainService } from 'src/app/services/blockchain.service';
   styleUrls: ['./blockchain-viewer.component.scss']
 })
 export class BlockchainViewerComponent {
-  /* Blockchain viewer component will allow user to view the chain of blocks that have been created thus far, using the BockchainService import to use
-  original Javascript code*/
-
+  /* Blockchain viewer component will allow user to view the chain of blocks that have been created thus far, 
+  using the BockchainService import to use original Javascript code*/
   public blocks = [];
   public selectedBlock = null;
 

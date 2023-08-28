@@ -8,7 +8,7 @@ import * as EC from 'elliptic';
 export class BlockchainService {
 
   public blockchainInstance = new Blockchain();
-  public walletKeys : any[] = []; 
+  public walletKeys = []; 
   constructor() { 
     this.blockchainInstance.difficulty = 1;
     this.blockchainInstance.minePendingTransactions('my-wallet-address');
@@ -21,7 +21,7 @@ export class BlockchainService {
     return this.blockchainInstance.chain;
   }  
   private generateWalletKeys() {
-    const ec: any = new EC.ec ('secp256k1');
+    const ec= new EC.ec ('secp256k1');
     const key  = ec.genKeyPair();
 
     this.walletKeys.push({
