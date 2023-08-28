@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-// @ts-ignore
 import { Blockchain } from 'blockchain/src/blockchain';
 import * as EC from 'elliptic';
 

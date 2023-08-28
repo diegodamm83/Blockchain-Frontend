@@ -11,9 +11,15 @@ export class BlockchainViewerComponent {
   original Javascript code*/
 
   public blocks = [];
+  public selectedBlock = null;
 
   constructor(private blockchainService: BlockchainService){
     this.blocks = blockchainService.getBlocks();
+    this.selectedBlock = this.blocks[0];
+  }
+
+  showTransactions(block: any){
+    this.selectedBlock = block;
   }
 
 }
