@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { BlockchainService } from 'src/app/services/blockchain.service';
 
 @Component({
@@ -14,11 +14,12 @@ export class BlockchainViewerComponent {
 
   constructor(private blockchainService: BlockchainService){
     this.blocks = blockchainService.getBlocks();
+    // Takes selected block from the blockchain service and sets it to the first block in the array
     this.selectedBlock = this.blocks[0];
   }
 
   showTransactions(block){
-    this.selectedBlock = block;
+    this.selectedBlock = block
   }
 
 }

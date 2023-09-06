@@ -1,7 +1,8 @@
 <div class="container"> <!-- Container: special class in bootstrap to center content -->
     <h1>Blocks on chain</h1>
     <p>Each card represents a block in the chain. Click on a card to see the transactions stored inside the block.</p>
-    <!-- Iterate over blocks array defined in typescript file and sotre it inro variable named block-->
+    <!-- Iterate over blocks array defined in typescript file and store it into variable named block-->
+    
     <app-block-view
     *ngFor="let block of blocks"
     [block]="block"

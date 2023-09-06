@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class BlockViewComponent {
 
-  @Input() public block: any;
+  @Input() public block;
 
   constructor(){
     
